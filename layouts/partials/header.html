@@ -5,11 +5,11 @@
 {{ if resources.Get $background_path }}
     {{ $background_path = (resources.Get $background_path).RelPermalink }}
 {{ end }}
-<div class="jumbotron" style="background-image: url({{ $background_path }});">
+<div class="jumbotron" style="background-image: url({{ $background_path }}); color: white;">
     <div class="container">
         <div class="site-title">
-            <a href="{{ .link }}">{{ .context.Site.Params.title }}</a>
+            <a href="{{ .link }}" style="color: white;">{{ .context.Site.Params.title }}</a>
         </div>
-        <p class="signature">{{ .context.Site.Params.signature }}</p>
+        <p class="signature" style="color: white;">{{ .context.Site.Params.signature }}</p>
     </div>
 </div>
