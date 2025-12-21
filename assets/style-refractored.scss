@@ -189,7 +189,8 @@ body{
 .page{
     max-width: 1150px;
     margin: auto;
-    background-color: var(--page-bg);n    transition: background-color 0.3s ease;
+    background-color: var(--page-bg);
+    transition: background-color 0.3s ease;
 }
 
 .container{
@@ -283,7 +284,7 @@ p{
         text-decoration: none;
     }
 
-    .page-link .page-item:hover{
+    .page-item:hover{
         background-color: var(--pagination-hover-bg);
     }
 }
